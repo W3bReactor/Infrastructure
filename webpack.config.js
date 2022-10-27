@@ -82,7 +82,7 @@ const config = {
     overlay: true,
   },
   resolve: {
-    extensions: ['*', '.html', '.css', '.js'],
+    extensions: ['*', '.html', '.css', '.js', '.jsx'],
     fallback: {
       stream: require.resolve('stream-browserify'),
     },

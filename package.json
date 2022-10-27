@@ -23,7 +23,7 @@
         "deploy": "npm run build | gh-pages -d dist",
         "lint:js": "eslint **/*.js --ignore-pattern node_modules/ dist/",
         "lint:css": "stylelint **/*.css",
-        "analyze": "statoscope validate --input stats.json",
+        "analyze": "npm run build && statoscope generate stats.json --output report.html -o",
         "validate": "node_modules/.bin/statoscope validate -i stats.json --config=./statoscope.config.js"
     },
     "devDependencies": {

@@ -3,10 +3,8 @@ name: Configuration
 on: 
   pull_request:
   push:
-    branches:
-      - '**'
-    branches-ignore: 
-     - master
+    branches: ['**']
+    branches-ignore: [master]
 
 jobs:
   build:

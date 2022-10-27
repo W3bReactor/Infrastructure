@@ -21,7 +21,7 @@
         "start": "cross-env NODE_ENV=development webpack serve --open --mode development",
         "build": "cross-env NODE_ENV=production webpack --mode production",
         "deploy": "npm run build | gh-pages -d dist",
-        "lint:js": "eslint **/*.js --ignore-pattern node_modules/ dist/",
+        "lint:js": "eslint **/*.js",
         "lint:css": "stylelint **/*.css",
         "analyze": "npm run build && statoscope generate stats.json --output report.html -o",
         "validate": "node_modules/.bin/statoscope validate -i stats.json --config=./statoscope.config.js"

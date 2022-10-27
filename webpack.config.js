@@ -33,7 +33,7 @@ const config = {
   module: {
     rules: [
       {
-        test: [/\.m?js$/, /\.ejs$/],
+        test: [/\.m?js$/, /\.ejs$/, /\.m?jsx$/, /\.ejsx$/ ],
         exclude: /(node_modules|bower_components)/,
         use: {
           loader: 'babel-loader',

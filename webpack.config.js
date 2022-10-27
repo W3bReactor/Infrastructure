@@ -8,9 +8,9 @@ const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 const production = process.env.NODE_ENV === 'production';
 const config = {
   entry: {
-    main: path.resolve(__dirname, './src/index.js'),
-    about: './src/pages/About.js',
-    home: './src/pages/Home.js',
+    main: path.resolve(__dirname, './src/index.jsx'),
+    about: './src/pages/About.jsx',
+    home: './src/pages/Home.jsx',
   },
   plugins: [
     new HtmlWebpackPlugin({

@@ -1,7 +1,8 @@
 import ReactDOM from 'react-dom';
+import React from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
-import { Application } from './Application';
+import Application from './Application';
 import './index.css';
 import { initStore } from './store';
 
@@ -13,5 +14,6 @@ ReactDOM.render(
       <Application />
     </Provider>
   </BrowserRouter>,
+  // eslint-disable-next-line no-undef
   document.getElementById('root'),
 );

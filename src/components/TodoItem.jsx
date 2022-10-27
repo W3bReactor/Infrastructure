@@ -5,7 +5,7 @@ import { UUID } from '../utils/uuid';
 
 import styles from './index.module.css';
 
-export function TodoItem(props) {
+function TodoItem(props) {
   const { index } = props;
 
   const dispatch = useDispatch();
@@ -23,3 +23,5 @@ export function TodoItem(props) {
     </div>
   );
 }
+
+export default TodoItem;
